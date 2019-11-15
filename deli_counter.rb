@@ -5,10 +5,10 @@ def line (katz_deli)
     puts "The line is currently empty."
   else 
     names = []
-    counter = 1
-    katz_deli.each do |n|
-      names << "#{counter}. #{n}"
-      counter += 1
+    place_in_line = 1
+    katz_deli.each do |name|
+      names << "#{place_in_line}. #{name}"
+      place_in_line += 1
   end 
     puts "The line is currently: #{names.join(" ")}" 
   end 
